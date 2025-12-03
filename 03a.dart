@@ -1,21 +1,6 @@
-import 'dart:io';
-import 'dart:convert';
 import 'dart:math';
 
-Future<List<String>> readLines(String path) async {
-  final file = File(path);
-  final lines = <String>[];
-
-  final stream = file.openRead()
-    .transform(utf8.decoder)
-    .transform(const LineSplitter());
-
-  await for (final line in stream) {
-    lines.add(line);
-  }
-
-  return lines;
-}
+import 'utils.dart';
 
 void main() async {
 //   final lines = await readLines('03.test');

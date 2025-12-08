@@ -1,0 +1,11 @@
+# Source - https://stackoverflow.com/a
+# Posted by mako
+# Retrieved 2025-12-08, License - CC BY-SA 4.0
+
+name: adventofcode2025
+
+environment:
+  sdk: "^3.10.0"
+
+dependencies:
+  collection: ^1.14.13
